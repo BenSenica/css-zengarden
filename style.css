@@ -1,0 +1,225 @@
+/* import new font to style headings */
+@import url("https://fonts.googleapis.com/css?family=Charm&display=swap");
+
+/* setting up the animation code for header */
+@keyframes header {
+    0% {left:0%;}
+    25% {left:35%;}
+    50% {left:70%;}
+    75% {left:35%;}
+    100% {left:0%;}
+}
+
+html body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: "Helvetica", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+    letter-spacing: 140%;
+    color: green;
+}
+
+header, .preamble h3, .explanation h3, .participation h3, .benefits h3, .requirements h3 {
+    font-family: "Charm";
+    color: crimson;
+}
+/* styling all links */
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: blue;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+a:visited {
+    color: gray;
+}
+
+/* header specific */
+header {
+    width: 1350px;
+    height: 400px;
+    background-image: url(images/zengarden.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: .7;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+header h1 {
+    width: 400px;
+    position: relative;
+    /*adding animation to header*/
+    animation: header 15s linear infinite both;
+    font-size: 50px;
+    color: white;
+    margin-bottom: 0;
+}
+
+header h2 {
+    font-size: 40px;
+    align-self: center;
+    color: lightgrey;
+    margin-top: 0;
+}
+
+header abbr {
+    text-decoration: none;
+    pointer-events: none;
+}
+
+p {
+    margin-top: 0;
+}
+
+h3 {
+    margin-bottom: 0;
+    margin-top: 0;
+    letter-spacing: 1;
+}
+
+.summary, .preamble, .explanation, .participation, .benefits, .requirements {
+    width: 600px;
+    margin-left: 200px;
+    position: relative;
+    z-index: 1;
+}
+
+/* styling all abbr tags */
+.summary abbr, .preamble abbr, .explanation abbr, .participation abbr, .benefits abbr, .requirements abbr, .view-css abbr, .css-resources abbr, .zen-faq abbr {
+    font-style: italic;
+}
+
+.summary abbr:hover, .preamble abbr:hover, .explanation abbr:hover, .participation abbr:hover, .benefits abbr:hover, .requirements abbr:hover, .view-css abbr:hover, .css-resources abbr:hover, .zen-faq abbr:hover {
+    font-weight: 600;
+}
+/* summary specific link styling */
+.summary a:hover {
+    background-color: lightgray;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+}
+    
+/* setting size of all header 3 */
+.preamble h3, .explanation h3, .participation h3, .benefits h3, .requirements h3 {
+    font-size: 28px;
+}
+
+/* footer styling*/
+footer {
+    width: 600px;
+    margin-left: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+footer a {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* Sidebar styling */
+.sidebar {
+    display: flex;
+    width: 500px;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 800px;
+    margin-top: -2150px;
+    position: relative;
+    z-index: 1;
+}
+
+.design-selection ul {
+    list-style: none;
+}
+
+.design-selection ul a {
+    text-shadow: 1px 1px #ff0000;
+}
+
+.design-selection ul a:visited {
+    text-shadow: 1px 1px #ff0000;
+}
+
+.design-archives ul {
+    list-style: square;
+    color: darkgoldenrod;
+}
+.zen-resources ul {
+    list-style: none;
+}
+
+/* adding extra images */
+.extra1 {
+    width: 490px;
+    height: 200px;
+    background-image: url(images/sakura2.png);
+    background-size: contain;
+    opacity: .6;
+    position: relative;
+    z-index: -1;
+    
+}
+
+.extra2 {
+    width: 1350px;
+    height: 200px;
+    background-image: url(images/groundimage.jpg);
+    background-size: contain;
+    transform: rotate(180deg);
+    background-position: bottom;
+    margin-top: 1330px;
+}
+
+.extra3 {
+    width: 490px;
+    height: 200px;
+    background-image: url(images/sakura2.png);
+    background-size: contain;
+    transform: rotate(180deg);
+    margin-top: -2300px;
+    margin-left: 730px;
+    opacity: .6;
+    position: relative;
+    z-index: -1;
+}
+
+.extra4 {
+    width: 490px;
+    height: 200px;
+    background-image: url(images/sakura2.png);
+    background-size: contain;
+    transform: rotate(180deg);
+    margin-top: 1000px;
+    margin-left: 730px;
+    opacity: .6;
+    position: relative;
+    z-index: -1;
+}
+
+.extra5 {
+    width: 626px;
+    height: 626px;
+    display: flex;
+    margin-left: auto;
+    background-image: url(images/torri.jpg);
+    background-size: 626px 626px;
+    background-repeat:no-repeat;
+    position: relative;
+    z-index: -1;
+}
